@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import csv
 import random
 import os
@@ -94,3 +95,16 @@ def make_teams_exp():
 get_exp()
 get_nonexp()
 make_teams_exp()                               
+=======
+import sys
+import os
+import csv
+
+if __name__ == "__main__":
+	def get_skill():
+		with open('soccer_players.csv', newline='') as csvfile:
+			reader = list(csv.reader(csvfile))
+			for row in reader:
+				print(row[0])
+get_skill()				
+>>>>>>> 0f988c75f5b2c4506d937dd8e47b3e1cdc911dfc
